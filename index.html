@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-expand-lg custom-navbar">
+                    <div class="container-fluid"> 
+                        <a class="navbar-brand fw-bold" href="#"> Home </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse " id="navbarNav">
+                            <ul class="navbar-nav d-flex justify-content-center w-100">
+                                <li class="nav-item"> <a class="nav-link" href="#past-experience">Past Experience</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Projects</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+                                <li class="nav-item" style="align-content: center"> 
+                                    <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+                                    <span><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></span>
+                                    <span></span>
+                                    </button> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+            <!--Dark Mode Toggle-->
+            <script>
+                function toggle_light_mode() {
+                    var app = document.getElementsByTagName("BODY")[0];
+                    if (localStorage.getItem("lightmode") == "dark") {
+                        localStorage.setItem("lightmode", "light");
+                        setTimeout(function () {
+                            app.setAttribute("light-mode", "light");
+                        }, 12);
+                    } else {
+                        localStorage.setItem("lightmode", "dark");
+                        setTimeout(function () {
+                            app.setAttribute("light-mode", "dark");
+                        }, 12);
+                    }
+                }
+
+                // Set toggle on first load
+                var app = document.getElementsByTagName("BODY")[0];
+                if (localStorage.getItem("lightmode") == "dark") {
+                    localStorage.setItem("lightmode", "dark");
+                    app.setAttribute("light-mode", "dark");
+                }
+
+            </script>
+
+        
+            <div class="row">
+                <div class="banner col-lg-8 col-md-12 col-sm-12">
+                    <h1 class="title">Jacob Santos</h1>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae urna ac quam pharetra eleifend. Vivamus tempus dui quis augue consectetur tincidunt. Suspendisse finibus venenatis tincidunt. Donec placerat dignissim turpis, eget tristique nisi ullamcorper ultrices. Ut sed blandit libero, in blandit diam. Mauris sollicitudin sapien nibh, nec vehicula nunc pharetra iaculis. Proin sodales ex a nunc lobortis mattis. Suspendisse eleifend sapien vitae quam ultricies, vitae tempor lacus pulvinar. Vivamus eget arcu dolor. Nullam auctor in nunc non porttitor. Pellentesque blandit venenatis tincidunt. Aenean et est nec lacus rutrum maximus vitae ut velit. Cras rhoncus felis non blandit interdum.
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    INSERT PHOTO HERE
+                </div>
+            </div> 
+            
+
+            <div id="past-experience" class="content-area row">
+                <div class="label col-12"> Past Experience </div>
+                <div class="wrapper hidden col-12 row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 order-lg-1 order-md-2 order-sm-2">
+                        <h2>IT CO-OP at Hunt Refining Company (August 2024 - August 2025)</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae urna ac quam pharetra eleifend. Vivamus tempus dui quis augue consectetur tincidunt. Suspendisse finibus venenatis tincidunt. Donec placerat dignissim turpis, eget tristique nisi ullamcorper ultrices. Ut sed blandit libero, in blandit diam. Mauris sollicitudin sapien nibh, nec vehicula nunc pharetra iaculis. Proin sodales ex a nunc lobortis mattis. Suspendisse eleifend sapien vitae quam ultricies, vitae tempor lacus pulvinar. Vivamus eget arcu dolor. Nullam auctor in nunc non porttitor. Pellentesque blandit venenatis tincidunt. Aenean et est nec lacus rutrum maximus vitae ut velit. Cras rhoncus felis non blandit interdum.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 order-lg-2 order-md-1 order-sm-1">
+                        <img class="img-fluid" src="https://media.glassdoor.com/sqll/232269/hunt-refining-company-squarelogo-1528788841509.png" alt="image 1" />
+                    </div>
+                    <div class="col-lg-10 col-md-12 col-sm-12 order-lg-3 order-md-4 order-sm-4">
+                        <h2>Lab Assistant for Computer Science (August 2023 - May 2024)</h2>
+                        <p>Lore ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae urna ac quam pharetra eleifend. Vivamus tempus dui quis augue consectetur tincidunt. Suspendisse finibus venenatis tincidunt. Donec placerat dignissim turpis, eget tristique nisi ullamcorper ultrices. Ut sed blandit libero, in blandit diam. Mauris sollicitudin sapien nibh, nec vehicula nunc pharetra iaculis. Proin sodales ex a nunc lobortis mattis. Suspendisse eleifend sapien vitae quam ultricies, vitae tempor lacus pulvinar. Vivamus eget arcu dolor. Nullam auctor in nunc non porttitor. Pellentesque blandit venenatis tincidunt. Aenean et est nec lacus rutrum maximus vitae ut velit. Cras rhoncus felis non blandit interdum.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 order-lg-4 order-md-3 order-sm-3">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/R.af113169677cfa9827b12e00a75bd2fc?rik=9Q6vUffMoXyTtQ&riu=http%3a%2f%2fcrimsondefense.cs.ua.edu%2fimg%2fCapstoneALogo-Engineering_CS.png&ehk=8%2bx4HWckZIWNb6ffnevtkbfuzyBVZvpD4rIzW7jeaMw%3d&risl=&pid=ImgRaw&r=0" alt="image 1" />
+                    </div>
+                    <!-- <div class="content">
+                        <h2>Constantly Evolving</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae urna ac quam pharetra eleifend. Vivamus tempus dui quis augue consectetur tincidunt. Suspendisse finibus venenatis tincidunt. Donec placerat dignissim turpis, eget tristique nisi ullamcorper ultrices. Ut sed blandit libero, in blandit diam. Mauris sollicitudin sapien nibh, nec vehicula nunc pharetra iaculis. Proin sodales ex a nunc lobortis mattis. Suspendisse eleifend sapien vitae quam ultricies, vitae tempor lacus pulvinar. Vivamus eget arcu dolor. Nullam auctor in nunc non porttitor. Pellentesque blandit venenatis tincidunt. Aenean et est nec lacus rutrum maximus vitae ut velit. Cras rhoncus felis non blandit interdum.
+                        </p>
+                    </div>
+                    <div class="image-area">
+                        <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="image 1" />
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const animeTitle = (element, miliseconds) => {
+                const arrayText = element.innerHTML.split("");
+                element.innerHTML = "";
+                arrayText.forEach((letter, indice) => {
+                    setTimeout(() => (element.innerHTML += letter), miliseconds * indice);
+                });
+                element.classList.add("animate__shakeY");
+            };
+
+            const h1 = document.querySelector("h1.title");
+            const description = document.querySelector("div.description");
+
+            animeTitle(h1, 35);
+            animeTitle(description, 3);
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    entry.isIntersecting
+                        ? entry.target.classList.add("show")
+                        : entry.target.classList.remove("show");
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll("div.hidden");
+
+            hiddenElements.forEach((el) => observer.observe(el));
+        </script>
+
+    </body>
+</html>
