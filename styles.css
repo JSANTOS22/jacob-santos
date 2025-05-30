@@ -2,12 +2,14 @@
     --bg-color: #FFF;
     --text-color: #000;
     --hl-color: #616060;
+    --card-bg-color: #f5f5f9;
 }
 
 [light-mode="dark"] {
     --bg-color: #363640;
     --text-color: #FFF;
     --hl-color: #adacac;
+    --card-bg-color: #464653;
 }
 
 /* Dark/Light Mode Toggle */
@@ -204,4 +206,17 @@ div.image-area > img {
 	filter: blur(0);
 	transform: translatex(0);
 	transition: 1s all;
+}
+
+/* == projects section == */
+.card {
+    background-color: var(--card-bg-color);
+}
+
+.card-title {
+    color: var(--color) !important;
+}
+
+.card-text {
+    color: var(--color) !important;
 }
