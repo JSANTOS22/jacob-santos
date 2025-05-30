@@ -11,7 +11,7 @@
             <header>
                 <nav class="navbar navbar-expand-lg custom-navbar">
                     <div class="container-fluid"> 
-                        <a class="navbar-brand fw-bold" href="#"> Home </a>
+                        <a class="navbar-brand fw-bold" href="#home"> Home </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                         <div class="collapse navbar-collapse " id="navbarNav">
                             <ul class="navbar-nav d-flex justify-content-center w-100">
@@ -60,7 +60,7 @@
 
         
             <div class="row">
-                <div class="banner col-lg-8 col-md-12 col-sm-12">
+                <div id="home" class="banner col-lg-8 col-md-12 col-sm-12">
                     <h1 class="title">Jacob Santos</h1>
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae urna ac quam pharetra eleifend. Vivamus tempus dui quis augue consectetur tincidunt. Suspendisse finibus venenatis tincidunt. Donec placerat dignissim turpis, eget tristique nisi ullamcorper ultrices. Ut sed blandit libero, in blandit diam. Mauris sollicitudin sapien nibh, nec vehicula nunc pharetra iaculis. Proin sodales ex a nunc lobortis mattis. Suspendisse eleifend sapien vitae quam ultricies, vitae tempor lacus pulvinar. Vivamus eget arcu dolor. Nullam auctor in nunc non porttitor. Pellentesque blandit venenatis tincidunt. Aenean et est nec lacus rutrum maximus vitae ut velit. Cras rhoncus felis non blandit interdum.
                     </div>
@@ -122,17 +122,17 @@
                             <div class="card-body">
                                 <h5 class="card-title">Max-Clique Approximation Algorithm</h5>
                                 <p class="card-text">Contains three implementations of the Maximum Clique Problem starting from Brute Force, Heuristic Algorithm, and my own custom Approximation.</p>
-                                <a href="https://github.com/JSANTOS22/Max-Clique/tree/main#what-is-a-maximum-clique" class="btn btn-primary">Go somewhere</a>
+                                <a href="https://github.com/JSANTOS22/Max-Clique/tree/main#what-is-a-maximum-clique" class="btn btn-primary">link</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card mx-auto" style="width: 18rem;">
-                            <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19721797f32%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19721797f32%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                            <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="https://media.geeksforgeeks.org/wp-content/uploads/20220831073313/search1.png" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
                             <div class="card-body">
                                 <h5 class="card-title">TODO: Trie Project</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <p class="card-text">Simulation of the Trie datastructure to give users a better understanding of its functionality and what it can be used for.</p>
+                                <a href="#" class="btn btn-primary">link</a>
                             </div>
                         </div>
                     </div>
@@ -142,6 +142,8 @@
         </div>
 
         <script>
+
+            // for animating the typing effect of the top of the page upon loading
             const animeTitle = (element, miliseconds) => {
                 const arrayText = element.innerHTML.split("");
                 element.innerHTML = "";
@@ -157,6 +159,7 @@
             animeTitle(h1, 35);
             animeTitle(description, 3);
 
+            // for animating each group to slide in upon scrolling 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     entry.isIntersecting
@@ -168,6 +171,22 @@
             const hiddenElements = document.querySelectorAll("div.hidden");
 
             hiddenElements.forEach((el) => observer.observe(el));
+
+            // for getting rid of and adding back banner class when window loads and changes size
+            function updateBannerClass() {
+                const bannerElement = document.querySelector('#home');
+                console.log(window.innerWidth);
+                if (window.innerWidth < 992) {
+                bannerElement.classList.remove('banner');
+                } else {
+                bannerElement.classList.add('banner');
+                }
+            }
+
+            
+            window.addEventListener('load', updateBannerClass);
+            
+            window.addEventListener('resize', updateBannerClass);
         </script>
 
     </body>
