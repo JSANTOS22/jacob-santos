@@ -3,6 +3,7 @@
     --text-color: #000;
     --hl-color: #616060;
     --card-bg-color: #f5f5f9;
+    --shadow: 2px 2px 30px rgba(36, 21, 21, 0.1);
 }
 
 [light-mode="dark"] {
@@ -10,6 +11,7 @@
     --text-color: #FFF;
     --hl-color: #adacac;
     --card-bg-color: #464653;
+    --shadow: 2px 2px 30px rgba(204, 187, 187, 0.1);
 }
 
 /* Dark/Light Mode Toggle */
@@ -173,17 +175,17 @@ body {
 	justify-content: center;
 }
 
-div.content > h2 {
+.content > h2 {
 	font-weight: bolder;
 }
 
-div.image-area {
+.image-area {
 	display: flex;
     align-items: center;
     height: 100%;
 }
 
-div.image-area > img {
+.image-area > img {
 	width: 100%;
 	max-height: 600px;
 	
@@ -223,4 +225,43 @@ div.image-area > img {
 
 .card-text {
     color: var(--color) !important;
+}
+
+.footer {
+	width: 100%;
+	height: auto;
+	box-shadow: var(--shadow);
+	padding: 10px;
+    margin-top: auto;
+}
+
+.footer-wrapper {
+	display: flex;
+	justify-content: center;
+	align-content: baseline;
+}
+
+.id-letter,
+.useful-links {
+	width: 50%;
+	height: auto;
+}
+
+.id-letter > span {
+	font-size: 4.4em;
+	font-weight: bolder;
+	background-image: url(https://img.freepik.com/premium-photo/wavy-stylized-backdrop-illustration_1034910-21983.jpg);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-font-smoothing: antialiased;
+}
+
+.useful-links > ul {
+	list-style: none;
+}
+
+.useful-links > ul > li > a {
+	text-decoration: none;
+	color: var(--color);
+	cursor: pointer;
 }
