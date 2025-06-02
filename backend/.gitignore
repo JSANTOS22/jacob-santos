@@ -1,3 +1,0 @@
-# Ensures appsettings doesn't get added to github containing sensitive information
-appsettings.json
-appsettings.*.json
