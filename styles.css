@@ -260,6 +260,7 @@ body {
 
 .useful-links > ul {
 	list-style: none;
+    word-break: break-word;
 }
 
 .useful-links > ul > li > a {
