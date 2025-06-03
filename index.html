@@ -6,6 +6,16 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "mICcITgoMyDm70Moi",
+                });
+            })();
+        </script>
+        <script src="email.js"></script>
     </head>
     <body>
         <div class="container">
@@ -100,7 +110,7 @@
                 <div class="label col-12"> Projects </div>
                 <div class="wrapper hidden col-12 row">
                     <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom: 5px">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card">
                             <img class="card-img-top" src="https://educativesite.com/wp-content/uploads/2019/09/complete-bipartite-graph-1024x640.png" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Bipartite Graph</h5>
@@ -110,7 +120,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom: 5px">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card">
                             <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="https://www.lancaster.ac.uk/stor-i-student-sites/libby-daniells/wp-content/uploads/sites/9/2020/04/TSP3-940x529.png">
                             <div class="card-body">
                                 <h5 class="card-title">Traveling Salesman Approximation Algorithm</h5>
@@ -120,7 +130,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12" style="margin-bottom: 5px">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card">
                             <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="https://tse3.mm.bing.net/th/id/OIP.mV-JOfRraOQaxgssdMvo1gHaFe?rs=1&pid=ImgDetMain" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
                             <div class="card-body">
                                 <h5 class="card-title">Max-Clique Approximation Algorithm</h5>
@@ -130,7 +140,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card">
                             <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="https://media.geeksforgeeks.org/wp-content/uploads/20220831073313/search1.png" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
                             <div class="card-body">
                                 <h5 class="card-title">TODO: Trie Project</h5>
@@ -146,25 +156,25 @@
             <div id="contact" class="content-area row">
                 <div class="label col-12" style="margin-bottom: 0%"> Contact Me </div>
                 <div class="wrapper hidden col-12 row">
-                    <form class="row g-3">
-                        <div class="col-md-3">
-                            <label for="user-first" class="form-label">First name</label>
+                    <form class="row g-3" id="contact-form" onsubmit="if(this.checkValidity()){send_email();} return false;">
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <label for="user-first" class="form-label">Your First Name</label>
                             <input type="text" class="form-control" id="user-first" placeholder="John" required>
                         </div>
-                        <div class="col-md-3">
-                            <label for="user-last" class="form-label">Last name</label>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <label for="user-last" class="form-label">Your Last Name</label>
                             <input type="text" class="form-control" id="user-last" placeholder="Smith" required>
                         </div>
-                        <div class="col-md-3">
-                            <label for="user-email" class="form-label">Email address</label>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <label for="user-email" class="form-label">Your Email Address</label>
                             <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp" placeholder="email@example.com" required>
                         </div>
-                        <div class="col-md-3">
-                            <label for="user-org" class="form-label">Organization (optional)</label>
-                            <input type="text" class="form-control" id="user-email" placeholder="example-org">
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <label for="user-org" class="form-label">Your Organization (optional)</label>
+                            <input type="text" class="form-control" id="user-org" placeholder="example-org">
                         </div>
                         <div class="col-md-12">
-                            <label for="user-message" class="form-label">Message</label>
+                            <label for="user-message" class="form-label">Your Message</label>
                             <textarea class="form-control" id="user-message" placeholder="Type Anything..." rows="3" required></textarea>
                         </div>
                         <div class="col-12">
@@ -177,22 +187,22 @@
                     <footer class="footer">
                         <div class="footer-wrapper">
                             <div class="id-letter">
-                                <span>More Info</span>
+                                <span>More Links</span>
                             </div>
                             <div class="useful-links">
                                 <ul>
                                     <li>
-                                        <a href="" target="_blank" rel="noreferrer">2jacobsantos2@gmail.com</a>
+                                        <a href="mailto:2jacobsantos2@gmail.com" target="_blank" rel="noreferrer"> <i class="fa-solid fa-envelope"></i> 2jacobsantos2@gmail.com</a>
                                     </li>
 
                                     <li>
-                                        <a href="" target="_blank" rel="noreferrer">(858)999-6380</a>
+                                        <a href="tel:+18589996380" target="_blank" rel="noreferrer"> <i class="fa-solid fa-phone"></i> +1 (858)999-6380</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/jacob-santos-b56552208/" target="_blank" rel="noreferrer">linkedin</a>
+                                        <a href="https://www.linkedin.com/in/jacob-santos-b56552208/" target="_blank" rel="noreferrer"> <i class="fa-brands fa-linkedin"></i> linkedin</a>
                                     </li>
                                     <li>
-                                        <a href="" target="_blank" rel="noreferrer">Become a Member</a>
+                                        <a href="https://github.com/JSANTOS22" target="_blank" rel="noreferrer"> <i class="fa-brands fa-github"></i> GitHub</a>
                                     </li>
                                 </ul>
                             </div>

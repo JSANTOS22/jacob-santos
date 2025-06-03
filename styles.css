@@ -4,6 +4,7 @@
     --hl-color: #616060;
     --card-bg-color: #f5f5f9;
     --shadow: 2px 2px 30px rgba(36, 21, 21, 0.1);
+    --hover-color: #adadad;
 }
 
 [light-mode="dark"] {
@@ -12,6 +13,7 @@
     --hl-color: #adacac;
     --card-bg-color: #464653;
     --shadow: 2px 2px 30px rgba(204, 187, 187, 0.1);
+    --hover-color: #807d7d;
 }
 
 /* Dark/Light Mode Toggle */
@@ -264,4 +266,8 @@ body {
 	text-decoration: none;
 	color: var(--color);
 	cursor: pointer;
+}
+
+.useful-links > ul > li > a:hover  {
+	color: var(--hover-color);
 }
