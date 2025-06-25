@@ -105,6 +105,10 @@ body {
     color: var(--text-color);
 }
 
+.custom-navbar {
+    background-color: var(--bg-color);
+}
+
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
   color: var(--text-color);
@@ -283,4 +287,5 @@ body {
 
 .portrait-container img {
     max-width: 500px;
+    width: 100%;
 }
