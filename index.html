@@ -77,8 +77,8 @@
                     <div class="description">I'm a software developer with hands-on experience in full-stack web development, specializing in JavaScript, C#, and data-driven applications. I’m always looking to tackle interesting problems and grow as a developer.
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    INSERT PHOTO HERE
+                <div class="col-lg-4 col-md-12 col-sm-12 portrait-container">
+                    <img class="img-fluid" src="Portrait.jpeg" alt="image 1" />
                 </div>
             </div> 
             
@@ -225,8 +225,8 @@
             const h1 = document.querySelector("h1.title");
             const description = document.querySelector("div.description");
 
-            animeTitle(h1, 35);
-            animeTitle(description, 3);
+            animeTitle(h1, 40);
+            animeTitle(description, 6);
 
             // for animating each group to slide in upon scrolling 
             const observer = new IntersectionObserver((entries) => {

@@ -272,3 +272,15 @@ body {
 .useful-links > ul > li > a:hover  {
 	color: var(--hover-color);
 }
+
+.portrait-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.portrait-container img {
+    max-width: 500px;
+}
