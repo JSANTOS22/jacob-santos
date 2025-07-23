@@ -63,10 +63,12 @@
 
                 // Set toggle on first load
                 var app = document.getElementsByTagName("BODY")[0];
-                if (localStorage.getItem("lightmode") == "dark") {
-                    localStorage.setItem("lightmode", "dark");
-                    app.setAttribute("light-mode", "dark");
+                let mode = localStorage.getItem("lightmode");
+                if (!mode) {
+                    mode = "dark";
+                    localStorage.setItem("lightmode", mode);
                 }
+                app.setAttribute("light-mode", mode);
 
             </script>
 

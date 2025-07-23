@@ -106,12 +106,12 @@ body {
 }
 
 .custom-navbar {
-    background-color: var(--bg-color);
+    background-color: #0a5d66;
 }
 
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
-  color: var(--text-color);
+  color: white;
 }
 
 .custom-navbar .nav-link:hover,
