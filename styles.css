@@ -84,6 +84,57 @@ a {
     backdrop-filter: blur(18px);
 }
 
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-item {
+    display: block;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.icon-button i,
+.theme-toggle i,
+.btn-primary-custom i,
+.btn-secondary-custom i,
+.project-link i,
+.contact-links i {
+    display: inline-block;
+    min-width: 1em;
+    font-style: normal;
+    text-align: center;
+}
+
+.fa-github::before { content: "◉"; }
+.fa-linkedin-in::before { content: "in"; font-weight: 800; }
+.fa-moon::before { content: "☾"; }
+.fa-sun::before { content: "☀"; }
+.fa-folder-open::before { content: "▣"; }
+.fa-paper-plane::before { content: "➤"; }
+.fa-arrow-up-right-from-square::before { content: "↗"; }
+.fa-envelope::before { content: "✉"; }
+.fa-phone::before { content: "☎"; }
+
 .site-nav .container-xl {
     display: flex;
     align-items: center;
@@ -721,6 +772,21 @@ textarea.form-control {
     border: 0;
 }
 
+.form-status {
+    min-height: 1.6em;
+    margin: 0;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.form-status[data-state="success"] {
+    color: var(--accent-strong);
+}
+
+.form-status[data-state="error"] {
+    color: var(--accent-warm);
+}
+
 .site-footer {
     border-top: 1px solid var(--line);
     background: var(--surface);
@@ -781,12 +847,26 @@ textarea.form-control {
     }
 
     .navbar-collapse {
+        display: none;
+        flex-basis: 100%;
         margin-top: 14px;
         padding: 12px;
         border: 1px solid var(--line);
         border-radius: 8px;
         background: var(--surface);
         box-shadow: var(--soft-shadow);
+    }
+
+    .navbar-collapse.is-open {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        display: block;
     }
 
     .nav-actions {
