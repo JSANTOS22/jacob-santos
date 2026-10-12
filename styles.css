@@ -84,35 +84,6 @@ a {
     backdrop-filter: blur(18px);
 }
 
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.navbar-collapse {
-    display: flex;
-    flex-basis: auto;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.nav-item {
-    display: block;
-}
-
-.navbar-toggler {
-    display: none;
-}
-
 .icon-button i,
 .theme-toggle i,
 .btn-primary-custom i,
@@ -125,15 +96,14 @@ a {
     text-align: center;
 }
 
-.fa-github::before { content: "◉"; }
-.fa-linkedin-in::before { content: "in"; font-weight: 800; }
-.fa-moon::before { content: "☾"; }
-.fa-sun::before { content: "☀"; }
-.fa-folder-open::before { content: "▣"; }
-.fa-paper-plane::before { content: "➤"; }
-.fa-arrow-up-right-from-square::before { content: "↗"; }
-.fa-envelope::before { content: "✉"; }
-.fa-phone::before { content: "☎"; }
+.icon-svg {
+    display: inline-block;
+    width: 1.05em;
+    height: 1.05em;
+    flex: 0 0 auto;
+    fill: currentColor;
+    vertical-align: -0.15em;
+}
 
 .site-nav .container-xl {
     display: flex;
@@ -259,15 +229,6 @@ html[data-theme="dark"] .theme-toggle-thumb {
 
 .navbar-toggler:focus {
     box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.2);
-}
-
-.navbar-toggler-icon {
-    width: 22px;
-    height: 22px;
-    background-image: linear-gradient(var(--ink), var(--ink)), linear-gradient(var(--ink), var(--ink)), linear-gradient(var(--ink), var(--ink));
-    background-position: center 5px, center 11px, center 17px;
-    background-repeat: no-repeat;
-    background-size: 22px 2px;
 }
 
 .hero-section {
@@ -629,6 +590,11 @@ html[data-theme="dark"] .theme-toggle-thumb {
     background: var(--surface);
 }
 
+.project-card img.project-image-contain {
+    object-fit: contain;
+    padding: 10px;
+}
+
 .project-card-body {
     display: flex;
     flex: 1;
@@ -847,26 +813,12 @@ textarea.form-control {
     }
 
     .navbar-collapse {
-        display: none;
-        flex-basis: 100%;
         margin-top: 14px;
         padding: 12px;
         border: 1px solid var(--line);
         border-radius: 8px;
         background: var(--surface);
         box-shadow: var(--soft-shadow);
-    }
-
-    .navbar-collapse.is-open {
-        display: block;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .navbar-toggler {
-        display: block;
     }
 
     .nav-actions {

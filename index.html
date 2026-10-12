@@ -6,6 +6,10 @@
         <meta name="description" content="Portfolio for Jacob Santos, a Full Stack AI Engineer at CGI and Computer Science student at the University of Alabama.">
         <title>Jacob Santos | Full Stack AI Engineer</title>
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <script>
             (function () {
                 const savedTheme = localStorage.getItem("lightmode") || "light";
@@ -40,7 +44,7 @@
 
                         <div class="nav-actions">
                             <a class="icon-button" href="https://github.com/JSANTOS22" target="_blank" rel="noreferrer" aria-label="GitHub profile">
-                                <i class="fa-brands fa-github"></i>
+                                <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.227.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.549 3.285-1.227 3.285-1.227.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.624-5.373-12-12-12"></path></svg>
                             </a>
                             <a class="icon-button" href="https://www.linkedin.com/in/jacob-santos-b56552208/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
                                 <i class="fa-brands fa-linkedin-in"></i>
@@ -72,7 +76,7 @@
 
                     <div class="hero-actions" aria-label="Primary actions">
                         <a class="btn-primary-custom" href="#projects">
-                            <i class="fa-solid fa-folder-open"></i>
+                            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H10l2 2h6.5A2.5 2.5 0 0 1 21 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 16.5v-11Zm2.5-.5a.5.5 0 0 0-.5.5v11c0 .276.224.5.5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-7.328l-2-2H5.5Z"></path></svg>
                             <span>View Projects</span>
                         </a>
                         <a class="btn-secondary-custom" href="#contact">
@@ -192,7 +196,7 @@
 
                     <div class="projects-grid">
                         <article class="project-card reveal">
-                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220831073313/search1.png" alt="Trie search illustration" loading="lazy">
+                            <img src="assets/images/projects/trie-simulator.png" alt="Trie search illustration" loading="lazy">
                             <div class="project-card-body">
                                 <p class="project-type">Data Structure Simulator</p>
                                 <h3>Trie Simulator</h3>
@@ -205,40 +209,40 @@
                         </article>
 
                         <article class="project-card reveal">
-                            <img src="https://www.lancaster.ac.uk/stor-i-student-sites/libby-daniells/wp-content/uploads/sites/9/2020/04/TSP3-940x529.png" alt="Traveling salesman route visualization" loading="lazy">
+                            <img src="assets/images/projects/traveling-salesman.png" alt="Traveling salesman route visualization" loading="lazy">
                             <div class="project-card-body">
                                 <p class="project-type">Approximation Algorithm</p>
                                 <h3>Traveling Salesman Problem</h3>
                                 <p>Three implementations of TSP, moving from brute force to nearest neighbor approximation and a custom approximation approach.</p>
                                 <a class="project-link" href="https://github.com/JSANTOS22/Traveling-Salesman-Problem#input-graph-structure" target="_blank" rel="noreferrer">
                                     <span>View repository</span>
-                                    <i class="fa-brands fa-github"></i>
+                                    <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.227.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.549 3.285-1.227 3.285-1.227.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.624-5.373-12-12-12"></path></svg>
                                 </a>
                             </div>
                         </article>
 
                         <article class="project-card reveal">
-                            <img src="https://tse3.mm.bing.net/th/id/OIP.mV-JOfRraOQaxgssdMvo1gHaFe?rs=1&pid=ImgDetMain" alt="Graph clique illustration" loading="lazy">
+                            <img src="assets/images/projects/max-clique.jpg" alt="Graph clique illustration" loading="lazy">
                             <div class="project-card-body">
                                 <p class="project-type">Graph Algorithm</p>
                                 <h3>Max-Clique Approximation</h3>
                                 <p>Explores brute force, heuristic, and custom approximation strategies for the maximum clique problem.</p>
                                 <a class="project-link" href="https://github.com/JSANTOS22/Max-Clique/tree/main#what-is-a-maximum-clique" target="_blank" rel="noreferrer">
                                     <span>View repository</span>
-                                    <i class="fa-brands fa-github"></i>
+                                    <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.227.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.549 3.285-1.227 3.285-1.227.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.624-5.373-12-12-12"></path></svg>
                                 </a>
                             </div>
                         </article>
 
                         <article class="project-card reveal">
-                            <img src="https://educativesite.com/wp-content/uploads/2019/09/complete-bipartite-graph-1024x640.png" alt="Complete bipartite graph illustration" loading="lazy">
+                            <img class="project-image-contain" src="assets/images/projects/bipartite-matching.png" alt="Bipartite graph matching illustration" loading="lazy">
                             <div class="project-card-body">
                                 <p class="project-type">Algorithm Animation</p>
                                 <h3>Bipartite Graph Matching</h3>
                                 <p>Animation of the Gale-Shapley algorithm for solving the matching problem in bipartite graphs.</p>
                                 <a class="project-link" href="https://github.com/JSANTOS22/BipartiteGraph" target="_blank" rel="noreferrer">
                                     <span>View repository</span>
-                                    <i class="fa-brands fa-github"></i>
+                                    <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.227.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.549 3.285-1.227 3.285-1.227.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.624-5.373-12-12-12"></path></svg>
                                 </a>
                             </div>
                         </article>
@@ -269,7 +273,7 @@
                                 <span>LinkedIn</span>
                             </a>
                             <a href="https://github.com/JSANTOS22" target="_blank" rel="noreferrer">
-                                <i class="fa-brands fa-github"></i>
+                                <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.227.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.549 3.285-1.227 3.285-1.227.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.624-5.373-12-12-12"></path></svg>
                                 <span>GitHub</span>
                             </a>
                         </div>
@@ -346,10 +350,21 @@
                     setTheme(nextTheme);
                 });
 
-                navToggle?.addEventListener("click", function () {
-                    const isOpen = nav.classList.toggle("is-open");
-                    navToggle.setAttribute("aria-expanded", String(isOpen));
+                document.querySelectorAll("svg.icon-svg").forEach((icon) => {
+                    const replacement = document.createElement("i");
+                    replacement.className = icon.closest(".btn-primary-custom")
+                        ? "fa-solid fa-folder-open"
+                        : "fa-brands fa-github";
+                    replacement.setAttribute("aria-hidden", "true");
+                    icon.replaceWith(replacement);
                 });
+
+                if (!window.bootstrap) {
+                    navToggle?.addEventListener("click", function () {
+                        const isOpen = nav.classList.toggle("is-open");
+                        navToggle.setAttribute("aria-expanded", String(isOpen));
+                    });
+                }
 
                 const revealObserver = new IntersectionObserver((entries) => {
                     entries.forEach((entry) => {
@@ -364,8 +379,12 @@
 
                 document.querySelectorAll(".site-nav .nav-link").forEach((link) => {
                     link.addEventListener("click", () => {
-                        nav.classList.remove("is-open");
-                        navToggle?.setAttribute("aria-expanded", "false");
+                        if (window.bootstrap) {
+                            bootstrap.Collapse.getOrCreateInstance(nav).hide();
+                        } else {
+                            nav.classList.remove("is-open");
+                            navToggle?.setAttribute("aria-expanded", "false");
+                        }
                     });
                 });
             })();
